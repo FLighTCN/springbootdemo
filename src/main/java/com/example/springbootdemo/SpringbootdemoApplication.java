@@ -10,5 +10,6 @@ public class SpringbootdemoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootdemoApplication.class, args);
+		System.out.println("Server Start!");
 	}
 }

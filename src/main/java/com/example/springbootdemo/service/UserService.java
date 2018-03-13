@@ -5,4 +5,6 @@ import com.example.springbootdemo.model.User;
 public interface UserService {
     int addUser(User user);
 
+    boolean checkLogin(User user);
+
 }

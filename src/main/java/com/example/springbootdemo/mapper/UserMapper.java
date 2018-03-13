@@ -9,6 +9,8 @@ public interface UserMapper {
 
     int insertSelective(User record);
 
+    int selectCount(User user);
+
     User selectByPrimaryKey(Integer userId);
 
     int updateByPrimaryKeySelective(User record);

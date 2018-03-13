@@ -15,4 +15,14 @@ public class UserServiceImpl implements UserService {
     public int addUser(User user) {
         return userMapper.insertSelective(user);
     }
+
+    @Override
+    public boolean checkLogin(User user) {
+        if(userMapper.selectCount(user)>0){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 }
